@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-eq2z*-+7s2wyl!fohz8*als3i8h_t=9y548md)ywqe#2#s1kpz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ringknock.pythonanywhere.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -69,7 +69,8 @@ TEMPLATES = [
     },
 ]
 
-ASGI_APPLICATION = 'RingKnock.asgi.application'
+# ASGI_APPLICATION = 'RingKnock.asgi.application'
+WSGI_APPLICATION = 'RingKnock.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
